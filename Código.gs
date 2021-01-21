@@ -71,6 +71,7 @@ function cellmandelbrot1() {
   var t2;
   var ts = 0;
   var ts1;
+  var colorFondo;
   
   /* Mandelbrot, basado en http://jonisalonen.com/2013/lets-draw-the-mandelbrot-set/ */
    
@@ -87,17 +88,19 @@ function cellmandelbrot1() {
         iter++;
       }
         
-      /* Cambiar color de fondo de la celda de acuerdo con un mapa de color definido, medir tiempo parcial uso SpreadsheetApp */
+      /* Determinar el color de fondo de la celda de acuerdo con un mapa de color definido */
         
-      var ts1 = new Date().getTime();
-
       if (iter < maxiter) {
-        mihoja.getRange(fil, col).setBackgroundRGB(255-iter*255/maxiter, 60, iter*255/maxiter);
+        colorFondo = {r: 255-iter*255/maxiter, g: 60, b: iter*255/maxiter };
       }
       else {
-        mihoja.getRange(fil, col).setBackgroundRGB(0, 0, 0);
+        colorFondo = {r: 0, g: 0, b: 0};
       }
 
+      /* Medir tiempo parcial uso SpreadsheetApp */
+
+      ts1 = new Date().getTime();
+      mihoja.getRange(fil, col).setBackgroundRGB(colorFondo.r, colorFondo.g, colorFondo.b);
       ts += new Date().getTime() - ts1;
     }
   }
@@ -201,9 +204,7 @@ function cellmandelbrot2() {
   /* Medir tiempo parcial uso servicio SpreadsheetApp */
 
   ts1 = new Date().getTime();
-
   mihoja.getRange(1,1,celdasY,celdasX).setBackgrounds(coloresFondo);
-
   ts += new Date().getTime() - ts1;
   
   var t2 = new Date().getTime();
