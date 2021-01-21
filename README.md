@@ -7,6 +7,8 @@ Mide el tiempo empleado en dibujarparte del conjunto de Mandelbrot en una hoja d
 
 Al alternar entre los motores de ejecución **Rhino** (viejo) y **V8** (nuevo), se aprecia que aunque el último es más rápido, se ve severamente afectado por el uso de llamadas a los servicios integrados de Google en Apps Script (en este caso `SpreadsheetApp`).
 
+👉 [Hoja de cálculo de ejemplo](https://docs.google.com/spreadsheets/d/1dS8A-7TKiJawASGxuHBdPgjqP99yr6-qC6PikE_9aDY/template/preview)
+
 ![](https://user-images.githubusercontent.com/12829262/105392309-5aab9a00-5c1b-11eb-9adf-963ecd52949d.png)
 
 ![](https://user-images.githubusercontent.com/12829262/105392307-5aab9a00-5c1b-11eb-8a01-7002137149b5.png)
