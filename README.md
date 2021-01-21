@@ -5,7 +5,7 @@ Mide el tiempo empleado en dibujar parte del conjunto de Mandelbrot en una hoja 
 *   Método 1: `setBackgroundRGB()` es usado en cada celda, aunque no se hace `flush()`.
 *   Método 2: Los colores calculados se almacenan en una matriz 2D y se establecen de una vez con un único `setBackgrounds()`.
 
-Al alternar entre los motores de ejecución **Rhino** (viejo) y **V8** (nuevo), se aprecia que aunque el último es más rápido, se ve severamente afectado por el uso de llamadas a los servicios integrados de Google en Apps Script (en este caso `SpreadsheetApp`).
+Al alternar entre los motores de ejecución **Rhino** (viejo) y **V8** (nuevo), se aprecia que aunque el último es más rápido, aparentemente se ve severamente afectado por el uso de llamadas a los servicios Apps Script integrados (en este caso `SpreadsheetApp`).
 
 👉 [Hoja de cálculo de ejemplo](https://docs.google.com/spreadsheets/d/1dS8A-7TKiJawASGxuHBdPgjqP99yr6-qC6PikE_9aDY/template/preview)
 
