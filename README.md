@@ -7,7 +7,7 @@ Mide el tiempo empleado en dibujar parte del conjunto de Mandelbrot en una hoja 
 
 El script no utiliza características propias de ES6 para facilitar la comparación de tiempos de ejecución usando los dos motores actualmente soportados.
 
-Al alternar entre los motores de ejecución **Rhino** (viejo) y **V8** (nuevo), se aprecia que aunque el último es más rápido, aparentemente se ve severamente afectado por el uso de llamadas a los servicios Apps Script integrados (en este caso `SpreadsheetApp`).
+Al alternar entre los motores de ejecución **Rhino** (viejo) y **V8** (nuevo), se aprecia que aunque el último es más rápido, aparentemente se ve más severamente afectado por el uso de llamadas a los servicios Apps Script integrados (en este caso `SpreadsheetApp`).
 
 👉 [Hoja de cálculo de ejemplo](https://docs.google.com/spreadsheets/d/1dS8A-7TKiJawASGxuHBdPgjqP99yr6-qC6PikE_9aDY/template/preview) 👈
 
