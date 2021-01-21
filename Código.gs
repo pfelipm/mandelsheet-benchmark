@@ -72,11 +72,12 @@ function cellmandelbrot1() {
   var ts = 0;
   var ts1;
   var colorFondo;
+  var fil, col, c_re, c_im, x, y, iter, nueva_x;
   
   /* Mandelbrot, basado en http://jonisalonen.com/2013/lets-draw-the-mandelbrot-set/ */
    
-  for (var fil = 1; fil <= celdasY; fil++) {
-    for (var col = 1; col <= celdasX; col++) {
+  for (fil = 1; fil <= celdasY; fil++) {
+    for (col = 1; col <= celdasX; col++) {
       c_re = (col - celdasX/2.0)*zoom/celdasX;
       c_im = (fil - celdasY/2.0)*zoom/celdasX;
       x = 0, y = 0;
@@ -170,12 +171,13 @@ function cellmandelbrot2() {
   var ts = 0;
   var ts1;
   var coloresFondoFila = [];
+  var fil, col, c_re, c_im, x, y, iter, nueva_x;
   
   /* Mandelbrot, basado en http://jonisalonen.com/2013/lets-draw-the-mandelbrot-set/ */
    
-  for (var fil = 1; fil <= celdasY; fil++) {
+  for (fil = 1; fil <= celdasY; fil++) {
     coloresFondoFila = [];
-    for (var col = 1; col <= celdasX; col++) {
+    for (col = 1; col <= celdasX; col++) {
       c_re = (col - celdasX/2.0)*zoom/celdasX;
       c_im = (fil - celdasY/2.0)*zoom/celdasX;
       x = 0, y = 0;
