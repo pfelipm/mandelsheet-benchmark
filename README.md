@@ -1,3 +1,4 @@
+![Creado con - Google Apps Script](https://img.shields.io/static/v1?label=Creado+con&message=Google+Apps+Script&color=blue&style=for-the-badge&logo=GAS)
 # mandelsheet-benchmark
 
 Mide el tiempo empleado en dibujar parte del conjunto de Mandelbrot en una hoja de cálculo de Google, usando dos métodos distintos, mediante Apps Script:
